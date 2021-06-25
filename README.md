@@ -1,7 +1,13 @@
 # leveropen
 Lever Open API Python Wrapper
 
+[![Build Status](https://travis-ci.com/n-n-s/leveropen.svg?branch=main)](https://travis-ci.com/n-n-s/leveropen)
+[![Coverage Status](https://coveralls.io/repos/github/n-n-s/leveropen/badge.svg?branch=main)](https://coveralls.io/github/n-n-s/leveropen?branch=main)
+[![Documentation Status](https://readthedocs.org/projects/leveropen/badge/?version=latest)](https://leveropen.readthedocs.io/en/latest/?badge=latest)
+
 This project enables access to Lever Open data using Python.
+
+[View the documentation](https://leveropen.readthedocs.io/en/latest/)
 
 ## Installation
 
