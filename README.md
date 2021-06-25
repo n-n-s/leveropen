@@ -12,7 +12,7 @@ This project enables access to Lever Open data using Python.
 ## Installation
 
 ```
-pip install git+https://github.com/n-n-s/leveropen.git
+pip install leveropen
 ```
 
 ## Usage Example
