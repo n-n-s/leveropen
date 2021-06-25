@@ -49,7 +49,7 @@ Parsing series: 100%|██████████| 5/5 [00:00<00:00, 19765.81s
 Parsing series objects: 100%|██████████| 5/5 [00:05<00:00,  1.16s/SeriesObjects]
 ```
 
-![](https://github.com/n-n-s/leveropen/blob/main/docs/lever_example_plot.png)
+![](https://leveropen.readthedocs.io/en/latest/_images/lever_example_plot.png)
 
 ## Links
 

@@ -20,9 +20,7 @@ setup(
     description="Python wrapper for Lever Open API",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/n-n-s/leveropen",
-    author="n-n-s",
-    author_email="",
+    url="https://leveropen.readthedocs.io/en/latest/",
     license="MIT",
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -33,7 +31,6 @@ setup(
     packages=find_packages(exclude=("tests", "docs")),
     include_package_data=True,
     install_requires=required,
-    setup_requires=['pytest-runner'],
     tests_require=["pytest", "pytest-mock"],
-    download_url="url-link-to-github-release"
+    download_url="https://github.com/n-n-s/leveropen"
 )
