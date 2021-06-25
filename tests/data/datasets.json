@@ -1,0 +1,129 @@
+{
+  "status": "success",
+  "data": {
+    "datasets": [
+      {
+        "uuid": "a",
+        "name": "Monthly GDP and main sectors, chained volume indices of gross value added",
+        "released_on": "2021-02-12",
+        "processed_on": "2021-03-05",
+        "collection": "Gross Domestic Product (GDP)",
+        "topic": "Economy",
+        "link": "example-base-url/v1/datasets/a",
+        "license": {
+          "name": "Open Government Licence v3.0",
+          "url": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+        },
+        "datetimes": [
+          {
+            "name": "Month",
+            "range": [
+              "January 1997",
+              "December 2020"
+            ]
+          }
+        ],
+        "locations": [
+          {
+            "type": "Country",
+            "name": "UK"
+          }
+        ],
+        "categories": [
+          {
+            "type": "Sector",
+            "name": "Construction"
+          },
+          {
+            "type": "Sector",
+            "name": "Services"
+          }
+        ],
+        "series": "example-base-url/v1/datasets/a/series?token=example-access-token"
+      },
+      {
+        "uuid": "b",
+        "name": "Example dataset b",
+        "released_on": "2021-02-12",
+        "processed_on": "2021-03-05",
+        "collection": "Another collection",
+        "topic": "Economy",
+        "link": "example-base-url/v1/datasets/b",
+        "license": {
+          "name": "Open Government Licence v3.0",
+          "url": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+        },
+        "datetimes": [
+          {
+            "name": "Month",
+            "range": [
+              "January 1997",
+              "December 2020"
+            ]
+          }
+        ],
+        "locations": [
+          {
+            "type": "Country",
+            "name": "UK"
+          }
+        ],
+        "categories": [
+          {
+            "type": "Sector",
+            "name": "Construction"
+          },
+          {
+            "type": "Sector",
+            "name": "Services"
+          }
+        ],
+        "series": "example-base-url/v1/datasets/b/series?token=example-access-token"
+      },
+      {
+        "uuid": "c",
+        "name": "Example dataset c",
+        "released_on": "2021-02-12",
+        "processed_on": "2021-03-05",
+        "collection": "Another collection",
+        "topic": "Another topic",
+        "link": "example-base-url/v1/datasets/c",
+        "license": {
+          "name": "Open Government Licence v3.0",
+          "url": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+        },
+        "datetimes": [
+          {
+            "name": "Month",
+            "range": [
+              "January 1997",
+              "December 2020"
+            ]
+          }
+        ],
+        "locations": [
+          {
+            "type": "Country",
+            "name": "UK"
+          }
+        ],
+        "categories": [
+          {
+            "type": "Sector",
+            "name": "Construction"
+          },
+          {
+            "type": "Sector",
+            "name": "Services"
+          }
+        ],
+        "series": "example-base-url/v1/datasets/c/series?token=example-access-token"
+      }
+    ]
+  },
+  "links": {
+    "self": "example-base-url/v1/datasets?page=1&token=example-access-token",
+    "next": null,
+    "previous": null
+  }
+}

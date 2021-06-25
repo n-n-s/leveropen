@@ -1,0 +1,78 @@
+{
+  "status": "success",
+  "data": {
+    "series": {
+      "uuid": "unique-id",
+      "name": "UK, Seasonally adjusted, Monthly GDP",
+      "units": "Count",
+      "magnitude": 1,
+      "link": "example-base-url/v1/datasets/a/series/saa?token=example-access-token",
+      "datetime": {
+        "name": "Month",
+        "range": [
+          "January 1997",
+          "December 2020"
+        ]
+      },
+      "location": {
+        "type": "Country",
+        "name": "UK"
+      },
+      "categories": [
+        {
+          "type": "Adjustment",
+          "name": "Seasonally adjusted"
+        },
+        {
+          "type": "Total",
+          "name": "Monthly GDP"
+        }
+      ],
+      "data": [
+        {
+          "value": "90.437",
+          "datetime": "May 2013",
+          "timestamps": [
+            1367366400,
+            1370044800
+          ]
+        },
+        {
+          "value": "101.2307",
+          "datetime": "May 2019",
+          "timestamps": [
+            1556668800,
+            1559347200
+          ]
+        },
+        {
+          "value": "92.9337",
+          "datetime": "March 2014",
+          "timestamps": [
+            1393632000,
+            1396310400
+          ]
+        },
+        {
+          "value": "84.2222",
+          "datetime": "September 2009",
+          "timestamps": [
+            1251763200,
+            1254355200
+          ]
+        },
+        {
+          "value": "79.4207",
+          "datetime": "August 2003",
+          "timestamps": [
+            1059696000,
+            1062374400
+          ]
+        }
+      ]
+    }
+  },
+  "links": {
+    "self": "example-base-url/v1/datasets/a/series/saa?token=example-access-token"
+  }
+}
