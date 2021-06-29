@@ -150,7 +150,7 @@ def test__parse_datasets(mock_lever, mock_datasets):
                 {"type": "Sector", "name": "Construction"},
                 {"type": "Sector", "name": "Services"},
             ],
-            series="example-base-url/v1/datasets/a/series?token=example-access-token"
+            series="example-base-url/v1/datasets/a/series?token=example-access-token",
         )
     ]
     actual = mock_lever._parse_datasets(datasets=datasets)

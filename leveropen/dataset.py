@@ -338,15 +338,31 @@ class Dataset:
         return series
 
     def _get_series_by_url(self, load=True):
-        spinner = Halo(spinner="dots")
-        spinner.start(f"Requesting series data")
         url = self.series_url
         url = url.replace(self.client.host_url, "")
-        resp = self.client.get(url, verbose=False).json()["data"]["series"]
-        spinner.succeed("Loading series data successful")
-        if load:
-            self.series = resp
-        return resp
+        next_page = True
+        page = 1
+        spinner = Halo(text="Requesting series data", spinner="dots")
+        spinner.start()
+        all_data_series = []
+        while next_page:
+            spinner.text = f"Requesting series data: page={page}"
+            content = self.client.get(url, params={"page": page}, verbose=False).json()
+            next_link = content["links"]["next"]
+            data_series = content["data"]["series"]
+            all_data_series = all_data_series + data_series
+            if not next_link:
+                next_page = False
+            else:
+                page += 1
+        if not all_data_series:
+            spinner.fail("Loading series data failed")
+            raise ValueError(f"Loading series data failed")
+        else:
+            spinner.succeed("Loading series data successful")
+            if load:
+                self.series = all_data_series
+            return all_data_series
 
     def _parse_series(self, series: list):
         series_objects = []

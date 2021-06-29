@@ -8,7 +8,7 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 
 # Requirements
-with open('requirements.txt') as f:
+with open("requirements.txt") as f:
     required = f.read().splitlines()
     required.remove("pytest")
     required.remove("pytest-mock")
@@ -16,7 +16,7 @@ with open('requirements.txt') as f:
 # This call to setup() does all the work
 setup(
     name="leveropen",
-    version="0.0.1",
+    version="0.0.2",
     description="Python wrapper for Lever Open API",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -32,5 +32,5 @@ setup(
     include_package_data=True,
     install_requires=required,
     tests_require=["pytest", "pytest-mock"],
-    download_url="https://github.com/n-n-s/leveropen"
+    download_url="https://github.com/n-n-s/leveropen",
 )
