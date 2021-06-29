@@ -230,7 +230,6 @@ class Lever:
                 next_page = False
             else:
                 page += 1
-                print(f"Processing next page: {page}")
         if not datasets:
             spinner.fail("Loading datasets failed")
             raise ValueError(f"Dataset not found with query '{query}'")
