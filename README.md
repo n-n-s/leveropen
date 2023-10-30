@@ -1,3 +1,5 @@
+:no_entry: :no_entry_sign: :warning: This package is **NO LONGER IN USE** since the _Lever Open_ company and project closed.
+
 # leveropen
 Lever Open API Python Wrapper
 
